@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="tests" thread-count="2" >
   <test  name="Test1"><!-- dev envi -->
     <classes>
-      <class name="testCases.TC002_editLead"/>
+      <class name="testCases.TC00211_editLead"/>
       <class name="testCases.TC001_createLead"/>
     </classes>
     
