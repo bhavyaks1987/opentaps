@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="5">
+<!-- if parallel not mentioned test cases runs sequentially,if we mention parallel tc will run parallaly,if we mention thraed count as n ex 3,then n  3 testcases open parallayby opening 3 browser,it depends on system capacity,by default thread count is 5--> 
+  <test  name="Test" >
+    <classes>
+      <class name="testCases.TC002_editLead"/>
+      <class name="testCases.TC003_deletelead"/>
+      <class name="testCases.TC001_createLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

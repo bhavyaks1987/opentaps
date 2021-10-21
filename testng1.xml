@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2" >
+  <test  name="Test1"><!-- dev envi -->
+    <classes>
+      <class name="testCases.TC002_editLead"/>
+      <class name="testCases.TC001_createLead"/>
+    </classes>
+    
+  </test> <!-- Test --><!-- qa envi -->
+  
+  <test  name="Test2">
+    <classes>
+      <class name="testCases.TC002_editLead"/>
+      <class name="testCases.TC001_createLead"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
+<!-- if parallel=class and trd cunt 2..tc002,tc001 from test 1 starts executing first,which evevr tc completes it picks tc002 of test2 to execute -->
+<!-- if parallet is at test level with tc 2...test1  and test2 executes parallay ie 1test case from test1 and 1test case from test 2 will start executing parallaly -->
